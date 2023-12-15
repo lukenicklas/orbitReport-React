@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 const Table = ({ sat }) => {
   return (
@@ -12,12 +12,12 @@ const Table = ({ sat }) => {
      </tr>
      </thead>
      <tbody>
-      {sat.map(({ id, data }) => (
+      {sat.map(( data, id ) => (
         <tr key={id}>
           <td>{data.name}</td>
           <td>{data.type}</td>
           <td>{data.launchDate}</td>
-          <td>{data.operational}</td>
+          <td>{data.operational ? "Active" : "Inactive"}</td>
      </tr>
       ))}
      </tbody>

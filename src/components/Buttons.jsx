@@ -14,5 +14,4 @@ const Buttons = ({ filterByType, setSat, displaySats }) => { //passing in the th
     </div>
   );
 };
-//when the button is clicked  the filterbytype function is called with sat as the argument. the second onclick is calling setData as teh argument resetting the displayed sat orbits
 export default Buttons;
